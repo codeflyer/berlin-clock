@@ -13,15 +13,14 @@ const rowStyle = {
   margin: '1px',
   padding: 0,
   height: '70px'
-}
+};
 
 export class Hour extends React.Component {
   render() {
     const tempStyle = Object.assign({}, cellStyle, { backgroundColor: this.props.isOn ? 'red' : 'grey' });
     return <div style={tempStyle}></div>
   }
-}
-
+};
 
 export class Hours extends React.Component {
   render() {
