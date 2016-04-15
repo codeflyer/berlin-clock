@@ -16,7 +16,7 @@ module.exports = (gulp) => {
       });
 
     gulp
-      .watch('client/**/*.css', ['css'])
+      .watch('client/**/*.scss', ['css'])
       .on('error', error => {
         console.error(error);
       });

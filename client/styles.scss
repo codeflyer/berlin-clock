@@ -1,3 +1,96 @@
+$red: #FF4136;
+$yellow: #FFDC00;
+$black: #111111;
+$gray: #AAAAAA;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  //background: darkcyan;
+  background: darkcyan;
+}
+
+.block {
+  border: 2px solid $black;
+  background: $gray;
+  display: inline-block;
+  border-radius: 4px;
+  width: 25%; height: 10em;
+  transition: all .2s ease-out;
+
+  &.on {
+    transition: all .2s ease-out;
+  }
+}
+
+.clock {
+  max-width: 765px; width: 100%;
+  margin: 2em auto 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 2em;
+  background: #fff;
+  border-radius: 1em;
+  border: 2px solid $black;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    bottom: -30vh; left: 46%;
+    width: 5em; height: 30vh;
+    border: 2px solid $black;
+    border-top: 0; border-bottom: 0;
+    background-color: #fff;
+  }
+}
+
+.seconds-tick {
+  @extend .block;
+  width: 10em;
+  border-radius: 50%;
+  position: relative;
+  transition: all .2s ease-out;
+
+  &.on, &.off { transition: all .2s ease-out; }
+  &.on { background: $yellow; }
+  &.off { background: $gray; }
+}
+
+.hour {
+  @extend .block;
+  &.on {
+    background-color: $red;
+  }
+}
+
+.minute {
+  @extend .block;
+
+  &.on {
+    background: $yellow;
+  }
+}
+.top .minute {
+  width: 9%;
+
+  &.on {
+    &.yellow { background: $yellow; }
+    &.red { background: $red; }
+  }
+}
+
+.row {
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+
+.time {
+  font-size: 2em;
+  position: absolute;
+  top: 1.6em; left: 0.5em;
 }

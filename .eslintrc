@@ -23,7 +23,7 @@
     "react/prop-types": 0,
     "react/jsx-boolean-value": [
       1,
-      "Always"
+      "always"
     ],
     "react/no-multi-comp": 0,
     "react/jsx-no-bind": 0

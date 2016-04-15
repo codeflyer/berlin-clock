@@ -3,8 +3,8 @@ const path = require('path');
 
 module.exports = {
   app: {
-    name: 'Some application name',
-    title: 'Some application title'
+    name: 'Super awesome Berlin Clock',
+    title: 'Super awesome Berlin Clock'
   },
   server: {
     port: 5000

@@ -1,0 +1,74 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  background: darkcyan; }
+
+.block, .seconds-tick, .hour, .minute {
+  border: 2px solid #111111;
+  background: #AAAAAA;
+  display: inline-block;
+  border-radius: 4px;
+  width: 25%;
+  height: 10em;
+  transition: all .2s ease-out; }
+  .block.on, .on.seconds-tick, .on.hour, .on.minute {
+    transition: all .2s ease-out; }
+
+.clock {
+  max-width: 765px;
+  width: 100%;
+  margin: 2em auto 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 2em;
+  background: #fff;
+  border-radius: 1em;
+  border: 2px solid #111111; }
+  .clock:after {
+    content: " ";
+    position: absolute;
+    bottom: -30vh;
+    left: 46%;
+    width: 5em;
+    height: 30vh;
+    border: 2px solid #111111;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #fff; }
+
+.seconds-tick {
+  width: 10em;
+  border-radius: 50%;
+  position: relative;
+  transition: all .2s ease-out; }
+  .seconds-tick.on, .seconds-tick.off {
+    transition: all .2s ease-out; }
+  .seconds-tick.on {
+    background: #FFDC00; }
+  .seconds-tick.off {
+    background: #AAAAAA; }
+
+.hour.on {
+  background-color: #FF4136; }
+
+.minute.on {
+  background: #FFDC00; }
+
+.top .minute {
+  width: 9%; }
+  .top .minute.on.yellow {
+    background: #FFDC00; }
+  .top .minute.on.red {
+    background: #FF4136; }
+
+.row:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.time {
+  font-size: 2em;
+  position: absolute;
+  top: 1.6em;
+  left: 0.5em; }
