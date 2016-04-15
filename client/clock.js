@@ -7,17 +7,22 @@ export class Clock extends React.Component {
 
   constructor(props) {
     super(props);
+    this.timer = null;
     this.state = {
       time: Date.now()
     };
   }
 
   componentDidMount() {
-    setInterval(() => {
+    this.timer = setInterval(() => {
       this.setState({
         time: Date.now()
       });
     }, 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
   }
 
   render() {
