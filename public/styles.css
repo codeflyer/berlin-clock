@@ -1,0 +1,24 @@
+html, body, #app, .uhr {
+  height: 100%; }
+
+body {
+  background: url("./newmap.png") no-repeat 0 -40px;
+  background-size: cover; }
+
+.uhr {
+  background-color: rgba(255, 255, 255, 0.35); }
+
+.kompanie {
+  height: 100px; }
+
+.kompanie * {
+  display: inline-block; }
+
+.otto, .otto img {
+  height: 200px; }
+
+.panzerwagen img {
+  height: 100px; }
+
+.soldat img {
+  height: 80px; }

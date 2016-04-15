@@ -10,7 +10,7 @@ module.exports = (gulp, config) => {
   return tasks;
 
   function copyHtmlTask() {
-    gulp.src('client/*.html')
+    gulp.src(['client/*.html', 'client/*.png', 'client/*.jpg'])
       .pipe(gulp.dest(config.folders.build));
   }
 };
