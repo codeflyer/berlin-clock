@@ -5,13 +5,13 @@ export default function Hours(props) {
   const currentHours = +moment(props.time).format('HH');
   const topRowLights = Math.floor(currentHours / 5);
   const bottomRowHours = currentHours % 5
-  let topRow = [0, 1, 2, 3].map((i) => {
+  const topRow = [0, 1, 2, 3].map((i) => {
       return i < topRowLights ?
         <div key={i} className="hour on"></div> :
         <div key={i} className="hour off"></div>;
   });
 
-  let bottomRow = [0, 1, 2, 3].map((i) => {
+  const bottomRow = [0, 1, 2, 3].map((i) => {
       return i < bottomRowHours ?
         <div key={i} className="hour on"></div> :
         <div key={i} className="hour off"></div>;
