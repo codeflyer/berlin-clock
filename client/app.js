@@ -3,7 +3,7 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import {Clock} from './clock.js';
+
 ReactDOM.render(
-  <div>Hello React!!</div>
-  , document.getElementById('app')
-);
+  <Clock />, document.getElementById('app'));

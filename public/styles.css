@@ -1,0 +1,25 @@
+.red {
+  color: red; }
+
+.blue {
+  color: blue; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px 10px 0 0;
+  background: black;
+  border: 1px solid black; }
+
+.box.row-of-11 {
+  width: 30px; }
+
+.seconds {
+  border-radius: 50%; }
+
+.boxes {
+  clear: both; }
+
+.box.first {
+  clear: both; }
