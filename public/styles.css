@@ -17,6 +17,13 @@ body {
 .otto, .otto img {
   height: 200px; }
 
+.otto cite {
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 200px; }
+
 .panzerwagen img {
   height: 100px; }
 
